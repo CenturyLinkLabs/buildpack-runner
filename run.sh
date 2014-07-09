@@ -6,8 +6,12 @@ fi
 
 if [ ! -d "/app" ]; then
 	if [ -n "$GIT_REPO" ]; then
-		git clone "$GIT_REPO" /app
-		/build/builder
+          rm -rf /build/buildpacks
+          mkdir -p /build/buildpacks
+          cd /build/buildpacks
+          xargs -L 1 git clone --depth=1 < /build/buildpacks.txt
+          git clone "$GIT_REPO" /app
+          /build/builder
 	else
 		echo "No \$GIT_REPO environment variable defined"
 		exit 1
