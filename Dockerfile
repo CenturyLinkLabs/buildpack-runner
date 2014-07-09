@@ -1,5 +1,5 @@
 FROM progrium/buildstep
-MAINTAINER Fernando Mayo <fernando@tutum.co>
+MAINTAINER 'CenturyLink Labs'
 
 ADD run.sh /run.sh
 RUN chmod +x /run.sh
