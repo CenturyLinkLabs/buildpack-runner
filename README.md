@@ -1,5 +1,6 @@
 CenturyLinkLabs/buildpack-runner
 ===========================
+[![](https://badge.imagelayers.io/centurylink/buildpack-runner.svg)](https://imagelayers.io/?images=centurylink/buildpack-runner:latest 'Get your own badge on imagelayers.io')
 
 Base docker image to create containers from app code using Heroku's buildpacks.
 
