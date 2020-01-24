@@ -1,3 +1,7 @@
+## NOTE
+
+This repo is no longer being maintained. Users are welcome to fork it, but we make no warranty of its functionality.
+
 CenturyLinkLabs/buildpack-runner
 ===========================
 [![](https://badge.imagelayers.io/centurylink/buildpack-runner.svg)](https://imagelayers.io/?images=centurylink/buildpack-runner:latest 'Get your own badge on imagelayers.io')
