@@ -1,9 +1,4 @@
 #!/bin/bash
-if [ "$#" -eq 0 ]; then
-	echo "No command/process type specified"
-        exit 1
-fi
-
 if [ ! -d "/app" ]; then
 	if [ -n "$GIT_REPO" ]; then
           rm -rf /build/buildpacks
@@ -18,4 +13,8 @@ if [ ! -d "/app" ]; then
 	fi
 fi
 
-exec /exec "$@"
+if [ "$#" -eq 0 ]; then
+	echo "No command/process type specified"
+else
+        exec /exec "$@"
+fi
